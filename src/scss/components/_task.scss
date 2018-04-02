@@ -1,0 +1,74 @@
+.tasks-content {
+	width: 90vw;
+	border: 2px solid $greenColor;
+	border-radius: 2px;
+	margin-top: 2em;
+	margin-bottom: 3em;
+	display: flex;
+	justify-content: center;
+}
+
+.task-list {
+	width: 90%;
+	padding: 0;
+}
+
+.element-list {
+	border: 1px solid $blueColor;
+	margin-top: 1.5em;
+	color: $colorFont;
+	display: flex;
+	align-items: center;
+	display: grid;
+	grid-template-columns: 30px 1fr 30px;
+	grid-column-gap: 5px;
+	transition: background-color ease .8s;
+	&:hover {
+		background-color: rgba($blueColor, 0.4);
+    }
+}
+
+.element-list:last-child {
+	margin-bottom: 1.5em;
+}
+
+.task-checkbox {
+	appearance: none;
+	border: 1px solid $colorLines;
+	width: 15px;
+	height: 15px;
+	outline: none;
+	position: relative;
+	margin-right: 7px;
+	margin-left: 7px;
+	padding-left: 2px;
+}
+
+.task-checkbox:checked {
+	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	color: #99a1a7;
+}
+
+.task-checkbox:checked:after {
+	content: '✓';
+	position: absolute;
+}
+
+.task-title {
+	font-size: .9em;
+}
+
+.task-completed {
+	text-decoration: line-through;
+	background-color: rgba($colorLines, 0.2);
+}
+
+.delete-btn {
+	width: 25px;
+	height: 25px;
+	background: url('../images/trash.svg');
+	@include icon();
+	border-style: none;
+	cursor: pointer;
+}

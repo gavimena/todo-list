@@ -1,0 +1,12 @@
+.search-task-content {
+	width: 80vw;
+	margin-top: 3em;
+}
+
+.search-task-input {
+	width: fill-available;
+	@include input();
+	padding-right: 10px;
+	background: url("../images/search.svg");
+	@include icon();
+}

@@ -1,0 +1,15 @@
+@mixin icon() {
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	background-position: right;
+	background-size: 17px;
+}
+
+@mixin input() {
+	height: 30px;
+	border: 1px solid $colorLines;
+	outline-style: none;
+	padding-left: 10px;
+	color: $colorFont;
+	font-size: 1em;
+}
