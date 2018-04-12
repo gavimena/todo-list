@@ -13,3 +13,8 @@ Each task has a trash button to delete this tasks. The taks has a style for thos
 2. Go inside the folder created
 3. Run npm install
 4. Run npm start
+
+
+# This is the how the porject looks like
+
+https://gavimena.github.io/todo-list
